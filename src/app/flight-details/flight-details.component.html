@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Flight Details</h1>
+    <hr>
+    <section class="form-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-8 col-sm-push-2">
+                <div class="form-group">
+                    <div>
+                        <select [(ngModel)]="selectedCountry" class="form-control" type="text">
+                            <option [ngValue]="Null" disabled>Select Country</option>
+                            <option *ngFor="let i of countryList" [ngValue]="i">{{i}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <select [(ngModel)]="numberOfPassengers" class="form-control" type="text">
+                            <option [ngValue]="Null" disabled>Select Passengers</option>
+                            <option *ngFor="let i of numbers" [ngValue]="i">{{i}}</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-danger" (click)="submit()">Submit</button>
+            </div>
+        </div>
+    </section>
+</div>

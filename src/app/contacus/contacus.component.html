@@ -1,0 +1,45 @@
+<section class="header">
+
+</section>
+
+<section data-rv-view="470" class="contact">
+    <div class="container align-right">
+        <div class="row">
+            <div class="mbr-white col-lg-8 col-md-7 content-container">
+                <h2 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2">
+                    Сontact us</h2>
+                    <hr>
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">
+                    here is the dummy data and this will not redirect to anywhere this just a dummy data that simulate a real web application
+                    that hase API's. Just contact us.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-5">
+                <div class="form-container">
+                    <div class="media-container-column" data-form-type="formoid">
+                        <div data-form-alert="" hidden="" class="align-center">
+                            Thanks for filling out the form!
+                        </div>
+                        <form  #formObject="ngForm" (ngSubmit)="send()">
+                            <div *ngIf="(formObject.invalid && (formObject.touched))" class="alert alert-danger">
+                                All inputs are required.
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" id="nmae" name="name" ngModel class="form-control" placeholder="Enter the name" required >
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email"id="email" ngModel class="form-control" placeholder="Enter email address"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id ="number" name="phoneNumber" ngModel placeholder="Enter Phone number" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger form-control">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

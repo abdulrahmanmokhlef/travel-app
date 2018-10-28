@@ -1,0 +1,21 @@
+.summary{
+    height: 151px;
+    margin-bottom: 50px;
+}
+.hGroup{
+    margin-top: 50px;
+}
+.panel-group{
+    margin-top: 50px;
+    margin-bottom: 51px;
+}
+.panel-heading{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px) {
+    .panel{
+        margin-bottom: 20px;
+    }
+  }

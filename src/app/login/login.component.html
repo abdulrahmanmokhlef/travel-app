@@ -1,0 +1,13 @@
+<div class="body">
+    <section class="login-section">
+        <form class="form-signin" #formObject="ngForm" (ngSubmit)="signIn(formObject.value)">
+            <div *ngIf="(formObject.invalid && (formObject.touched))" class="alert alert-danger">
+                Username and password are required.
+            </div>
+            <h2 class="form-signin-heading center">Login</h2>
+            <input type="text" id="inputUsername" name="username" ngModel class="form-control" placeholder="Username" required autofocus>
+            <input type="password" id="inputPassword" name="password" ngModel class="form-control" placeholder="Password" required>
+            <button class="btn btn-lg btn-danger btn-block" type="submit">Sign in</button>
+        </form>
+    </section>
+</div>
