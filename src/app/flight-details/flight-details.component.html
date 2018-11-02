@@ -7,7 +7,7 @@
                 <div class="form-group">
                     <div>
                         <select [(ngModel)]="selectedCountry" class="form-control" type="text">
-                            <option [ngValue]="Null" disabled>Select Country</option>
+                            <option [ngValue]="SelectCountry" disabled>Select Country</option>
                             <option *ngFor="let i of countryList" [ngValue]="i">{{i}}</option>
                         </select>
                     </div>
@@ -15,7 +15,7 @@
                 <div class="form-group">
                     <div>
                         <select [(ngModel)]="numberOfPassengers" class="form-control" type="text">
-                            <option [ngValue]="Null" disabled>Select Passengers</option>
+                            <option [ngValue]="SelectPassengers" disabled>Select Passengers</option>
                             <option *ngFor="let i of numbers" [ngValue]="i">{{i}}</option>
                         </select>
                     </div>

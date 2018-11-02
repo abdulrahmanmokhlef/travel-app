@@ -13,22 +13,21 @@ import { Router } from '@angular/router';
 export class FlightDetailsComponent {
 
   constructor(private service?: CountriesService, private router?: Router) { }
-
   countryList = this.service.getCountries();
   numbers = this.service.getNumbers();
 
-  private selectedCountry ;
-  private numberOfPassengers;
+  selectedCountry ;
+  numberOfPassengers;
 
-  submit(){
+  submit() {
     this.cp();
-    if(this.selectedCountry && this.numberOfPassengers){
+    if (this.selectedCountry && this.numberOfPassengers) {
       this.router.navigate(['/passemgersDetails']);
     }
-    
+
   }
 
-  cp(){
+  cp() {
     localStorage.setItem('country', this.selectedCountry);
     localStorage.setItem('passenger', this.numberOfPassengers);
    }

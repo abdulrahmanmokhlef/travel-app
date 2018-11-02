@@ -4,13 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CountriesService {
-  private countryList = ["Egypt", "Canada", "Algeria", "Armenia", "US", "Bahrain", "Brazil"];
+  private countryList = ['Egypt', 'Canada', 'Algeria', 'Armenia', 'US', 'Bahrain', 'Brazil'];
   private numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-  getCountries(){
+  getCountries() {
     return this.countryList;
   }
-  getNumbers(){
+  getNumbers() {
     return this.numbers;
   }
 }
