@@ -8,7 +8,13 @@
     margin-top:-20px;
 
 }
-
+.plane{
+    height: 20px;
+    text-align: center;
+}
+.planeSection{
+    margin-top: 100px;
+}
 .travel {
     color: floralwhite;
     font-size: 100px;
