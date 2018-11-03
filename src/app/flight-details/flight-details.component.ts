@@ -16,7 +16,7 @@ export class FlightDetailsComponent {
   countryList = this.service.getCountries();
   numbers = this.service.getNumbers();
 
-  selectedCountry ;
+  selectedCountry;
   numberOfPassengers;
 
   submit() {
